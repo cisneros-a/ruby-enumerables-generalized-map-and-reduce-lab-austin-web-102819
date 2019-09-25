@@ -29,7 +29,7 @@ def my_own_map(array)
   while i < array.length
     new_array << yield(array[i])
     i += 1
-  end 
+  end
 end
 
 my_own_map(array) {|a| << a }
