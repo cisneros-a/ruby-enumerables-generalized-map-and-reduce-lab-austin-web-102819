@@ -24,7 +24,17 @@ end
 array = [2, -4, 8, 10]
 
 def my_own_map(array)
-  yield(array.join(" "))
+  new_array = []
+  yield(array)
+  p new_array
 end
 
-my_own_map(array) {|a| p a }
+my_own_map(array) {|a| new_array << a }
+
+
+
+
+
+
+
+
