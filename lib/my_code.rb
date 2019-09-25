@@ -23,7 +23,7 @@ end
 
 array = [2, -4, 8, 10]
 
-def my_own_map(array)
+def map(array)
   new_array = []
   i = 0
   while i < array.length
@@ -33,4 +33,3 @@ def my_own_map(array)
   new_array
 end
 
-my_own_map(array) {|a| << a }
