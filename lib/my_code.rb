@@ -25,8 +25,11 @@ array = [2, -4, 8, 10]
 
 def my_own_map(array)
   new_array = []
-  yield(array)
-  p new_array
+  i = 0
+  while i < array.length
+    new_array << yield(array[i])
+    i += 1
+  end 
 end
 
-my_own_map(array) {|a| new_array << a }
+my_own_map(array) {|a| << a }
