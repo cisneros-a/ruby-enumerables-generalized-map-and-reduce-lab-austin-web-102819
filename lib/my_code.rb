@@ -30,11 +30,3 @@ def my_own_map(array)
 end
 
 my_own_map(array) {|a| new_array << a }
-
-
-
-
-
-
-
-
